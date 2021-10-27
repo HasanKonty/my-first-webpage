@@ -20,6 +20,7 @@ body {
     flex:1 0 25%;
 }
 
+
 .awesome{
     display: flex;
     flex: 1;
@@ -31,13 +32,33 @@ body {
 }
 
 .quote{
+    background-color: #e5e7eb;
+    padding: 70px 180px;
+    flex: 0 0 auto ;
+    justify-content: center;
+    /* align-items: center; */
     display: flex;
+    flex-direction: column;
     flex: 1;
+}
+
+.inspiring{
+    justify-content: flex-start;
+    color:#1f2937bb;
+    display: flex;
+    flex-wrap: nowrap;
+    font-style: italic;
+    font-size: 26px;
+}
+.someone{
+    display: flex;
+    justify-content: flex-end;
+   
 }
 .footer{
     color: #e5e7eb;
     font-size: 10px;
-    height: 60px;
+    height: 50px;
     margin: 0;
     border: 0;
     background-color: #1f2937;
@@ -55,6 +76,7 @@ body {
 }
 
 .blue-box {
+    border-radius: 5px;
     color: #e5e7eb;
     background-color:#3882f6 ;
     display: flex;
@@ -76,4 +98,17 @@ body {
     margin-bottom: 0;
     padding: 0;
 
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#3882f6 ;
+    color: #e5e7eb;
+    border-style: solid;
+    border-color: #e5e7eb;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 2px 12px;
 }
