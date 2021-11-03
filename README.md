@@ -20,3 +20,14 @@ anyhoe i just discovered that stressing and grinding isn't the key... clear mind
 
 
 um wondering when should i commit my changes... um commiting now anyhow...
+
+i decided to commit and push everytime i feel bored and want to take some time off...
+
+
+after finishing... the things i learned 
+-how to use border radoius
+-how to decorate links
+-how to style buttons
+
+
+i kinda feel a bit more confident and optimistic.... i know this means i am just begining and i know nothing... i guess patience is the key...
