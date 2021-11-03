@@ -17,15 +17,60 @@ body {
 .main {
     display: flex;
     flex-direction: column;
-    flex:1 0 25%;
+    flex: 1 1 25%;
 }
 
-
+/* considering how to make it flex grow to prevent the text from going to the container below... */
 .awesome{
     display: flex;
-    flex: 1;
+    background-color: #1f2937;
+    padding: 100px;
+    justify-content: space-around;
+    
 }
-/* in progress */
+/* trying to figure out how to stop text from going to the section below while wrapping... */
+.awesome-text-container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 200px;
+    max-height: 200px;
+    width: 350px;
+}
+
+.heading{
+    font-weight: 900;
+    font-size: 42px;
+    color:#e5e7eb;
+    flex-wrap: wrap;
+
+}
+
+.sub-heading{
+    color: #e5e7eb93;
+}
+
+.first-signup-button{
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    background-color:#3882f6 ;
+    color: #e5e7eb;
+    border-style: solid;
+    border-color: #3882f6;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 4px 16px;
+    margin-top: 10px;
+}
+
+img{
+    width: 450px;
+    height: 200px;
+}
+
 .random{
     display: flex;
     flex-direction: column;
@@ -33,20 +78,36 @@ body {
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 70px;
-    flex: 1;
+    
 }
-/* in progress */
+
+.random-text{
+    font-size: 26px;
+    font-weight: 600;
+    margin: 20px;
+
+}
+
+.caption-container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
 .boxes{
     display: flex;
 }
-/* in progress */
+
 .box{
     display: flex;
-    border: 2px;
+    border: 3px;
     border-style: solid;
     border-color: #3882f6;
     width: 110px;
     height: 110px;
+
     border-radius: 10px;
     
 
@@ -55,14 +116,11 @@ body {
 .caption-text{
     width:110px;
     font-size: 10px;
-    color:rgba(0, 0, 0, 0.637)
+    color:rgba(0, 0, 0, 0.637);
+    text-align: center;
 }
 
-.caption-container{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 .quote{
     background-color: #e5e7eb;
     padding: 70px 180px 50px;
@@ -73,10 +131,10 @@ body {
     flex-direction: column;
     flex: 1;
 }
-/* done! */
+
 .inspiring{
     justify-content: flex-start;
-    color:#1f2937bb;
+    color:#1f293798;
     display: flex;
     flex-wrap: wrap;
     font-style: italic;
@@ -86,7 +144,7 @@ body {
     max-width: 800px;
 }
 .someone{
-    font-weight: bold;
+    font-weight: 500;
     display: flex;
     justify-content: flex-end;
    
@@ -137,15 +195,17 @@ body {
 
 }
 
-button {
+.second-signup-button {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:#3882f6 ;
+    font-size: 14px;
+    font-weight: 500;
     color: #e5e7eb;
     border-style: solid;
     border-color: #e5e7eb;
     border-width: 1px;
     border-radius: 3px;
-    padding: 2px 12px;
+    padding: 3px 18px;
 }
