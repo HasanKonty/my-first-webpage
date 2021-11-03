@@ -13,6 +13,23 @@ body {
 
 .header {
     display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    background-color: #1f2937;
+    padding: 10px 50px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #e5e7ebc4;
+    margin-left: 12px;
+}
+.logo-image{
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+
 }
 .main {
     display: flex;
@@ -20,7 +37,6 @@ body {
     flex: 1 1 25%;
 }
 
-/* considering how to make it flex grow to prevent the text from going to the container below... */
 .awesome{
     display: flex;
     background-color: #1f2937;
@@ -28,14 +44,14 @@ body {
     justify-content: space-around;
     
 }
-/* trying to figure out how to stop text from going to the section below while wrapping... */
 .awesome-text-container{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
     height: 200px;
-    max-height: 200px;
     width: 350px;
+    margin: 50px;
 }
 
 .heading{
@@ -66,11 +82,16 @@ body {
     margin-top: 10px;
 }
 
-img{
-    width: 450px;
+.trees-image{
+    width: 100%;
     height: 200px;
+    border-radius: 12px;
 }
 
+.image{
+    min-width: 250px;
+    max-width: 450px;
+}
 .random{
     display: flex;
     flex-direction: column;
@@ -98,6 +119,7 @@ img{
 
 .boxes{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .box{
